@@ -1,5 +1,6 @@
 .container{
     position: absolute;
+    object-fit: cover;
 }
 
 .vidContainer faceVideo{
@@ -10,10 +11,7 @@
   /* The hero image */
 .hero-image {
     position: absolute;
-    width: 360px;
-    height: 746px;
-    left: 0px;
-    top: 46px;
+
   
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
@@ -38,6 +36,7 @@
 
 .blur {
     position: absolute;
+    object-fit: cover;
     left: 0;
     bottom: 0;
     height: 100%;
