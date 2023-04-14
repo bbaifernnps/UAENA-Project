@@ -48,7 +48,6 @@ html, body {
     font-weight: 700;
     font-size: 40px;
     line-height: 84.02%;
-    /* or 34px */
 
     letter-spacing: 0.015em;
 
@@ -56,3 +55,82 @@ html, body {
 
     text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
     }
+
+
+    .vinylsection{
+        position: relative;
+        top: 250px;
+    }
+    .video-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        position: relative;
+        align-items: center;
+        width: 348px;
+        height: 355px;
+        left: 13px;
+        margin-bottom: 5%;
+        
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(5px);
+        border-radius: 38px;
+        padding: 10px;
+        gap: 10px;
+        overflow: hidden;
+      }
+      
+      .video-box video {
+        width: 50%;
+        height: auto;
+        border-radius: 100px;
+      }
+      
+      .video-box button {
+        /* Width and height */
+        width: auto;
+        height: 34px;
+
+        /* Font styles */
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        color: #000000;
+
+        /* Flexbox properties */
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 9px 15px;
+        gap: 27px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+
+        /* Other styles */
+        position: relative;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        white-space: nowrap;
+        border: none;
+        outline: none;
+        pointer-events: none;
+      }
+      
+      
+      .video-box p {
+        position: relative;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.045em;
+
+        color: #000000;
+      }
