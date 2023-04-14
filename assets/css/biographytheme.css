@@ -285,6 +285,54 @@
   flex-grow: 0;
 }
 
+/*Button*/
+.nextbtn {
+  /* Width and height */
+  width: 160px;
+  height: 34px;
+
+  /* Font styles */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+
+  /* Flexbox properties */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 9px 15px;
+  gap: 27px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  /* Other styles */
+  position: absolute;
+  left: 217px;
+  top: 2427px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/*Discography menu*/
+.discography{
+  position: absolute;
+  width: 132.36px;
+  height: 273.55px;
+  left: 237px;
+  top: 2148px;
+
+  filter: drop-shadow(-8px 13px 4px rgba(0, 0, 0, 0.25));
+}
+
   body {
     background: linear-gradient(180deg, #D6DFFE 0%, #EDE2FF 33.72%, #BFCEFF 66.45%, #E0E7FF 95.21%);
     background-attachment: fixed;
