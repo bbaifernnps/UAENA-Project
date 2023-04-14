@@ -2,14 +2,19 @@
     position: relative;
   }
   
-  .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+  html, body {
     height: 100%;
-    background: linear-gradient(0deg, rgba(47, 46, 74, 0.2), rgba(47, 46, 74, 0.2));
-    z-index: 0;
+    margin: 0;
+    position:relative;
+  }
+  
+  .background img {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
   }
   
   /* Text */
@@ -66,9 +71,5 @@
 
   .overlay {
     position: absolute;  
-  }
-  
-  body {
-    position: relative;
   }
   
