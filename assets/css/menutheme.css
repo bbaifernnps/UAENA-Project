@@ -18,45 +18,45 @@
 
 /* Menu Icon */
 
-.photogallery {
+.photogallery img{
   position: absolute;
   top: 130px;
   left: 7px;
-  width: 5px !important;
-  height: 5px !important;
+  width: 104px !important;
+  height:62px !important;
 }
 
-.musicvideo {
+.musicvideo img{
   position: absolute;
   top: 131px;
   left: 140px;
-  width: 4px !important;
-  height: 4px !important;
+  width: 113px !important;
+  height: 96px !important;
 }
 
-.movies {
+.movies img{
   position: absolute;
   top: 359px;
   left: 72px;
-  width: 3px !important;
-  height: 3px !important;
+  width: 199px !important;
+  height: 78px !important;
 }
 
-.discography {
+.discography img{
   position: absolute;
   top: 513.5px;
   left: -3.67px;
-  width: 2px !important;
-  height: 2px !important;
-  transform: rotate(-6.3deg);
+  width: 164px !important;
+  height: 286px !important;
+
 }
 
-.biography {
+.biography img{
   position: absolute;
   top: 446px;
   left: 199px;
-  width: 3px !important;
-  height: 3px !important;
+  width: 199px !important;
+  height: 348px !important;
 }
 
 
