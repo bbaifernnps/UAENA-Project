@@ -29,17 +29,16 @@
 /* Text*/
 .knowmoretext {
   position: absolute;
-  width: 236px;
+  width: 243px;
   height: 68px;
   left: 136px;
   top: 112px;
 
-  font-family: 'Inter';
+  font-family: 'Mitr';
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 40px;
   line-height: 84.02%;
-  /* or 34px */
 
   letter-spacing: 0.015em;
   color: #FFFFFF;
@@ -50,15 +49,16 @@
 .iutext{
   position: absolute;
   width: 78px;
-  height: 80px;
-  left: 295px;
-  top: 205px;
+  height: 110px;
+  left: 292px;
+  top: 160px;
 
-  font-family: 'Inter';
+  font-family: 'Mitr';
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 70px;
-  line-height: 85px;
+  line-height: 110px;
+
   letter-spacing: 0.085em;
   color: #FFFFFF;
   text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.25);
