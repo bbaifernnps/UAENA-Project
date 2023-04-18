@@ -1,23 +1,38 @@
+html {    
+  background: url('/assets/IU/Homepage/homepagebg.mp4') repeat center fixed;     
+  background-size: contain;
+}
+nav {
+  background-color: white;
+  z-index: 10;
+}
 .container{
     position: absolute;
-    object-fit: cover;
 }
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+video {
+  width: 100%;
+  height: auto;
+  filter:blur(4px);
 
+}
 .vidContainer faceVideo{
     position: absolute;
     object-fit: cover;
+    object-position: top;
     z-index: 0;
 }
 
   /* The hero image */
 .hero-image {
     position: absolute;
-
-  
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
 }
   
@@ -104,17 +119,11 @@
 } 
 
 .overlay {
-    position: absolute;  
-}
-
-.blur {
-    position: absolute;
-    object-fit: cover;
+    position: absolute; 
     left: 0;
     bottom: 0;
-    height: 100%;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px); 
+    height: 100vh;; 
     z-index: 1;
 }
+
   
