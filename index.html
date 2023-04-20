@@ -12,59 +12,121 @@
       content="Bootstrap 5 Mobile App Landing Page Template"
     />
     <meta name="author" content="Xiaoying Riley at 3rd Wave Media" />
-    
 
     <!-- Google Font -->
-    <link 
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Mitr:wght@400;500;700&display=swap" 
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Mitr:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
     
     <!-- FontAwesome JS-->
-    <script defer src="assets/fontawesome/js/all.min.js"></script>
-
+    <script defer src="/assets/fontawesome/js/all.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="/assets/fonts/bootstrap-icons-1.10.4/font/bootstrap-icons.css"
+    />
     <!-- Plugins CSS -->
     <link
       rel="stylesheet"
-      href="assets/plugins/bootstraps/css/bootstrap.min.css"
+      href="/assets/plugins/bootstraps/css/bootstrap.min.css"
     />
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="assets/css/Theme.css" />
+    <link rel="stylesheet" href="/assets/css/Theme.css" />
   </head>
   <body>
+    <nav class="navbar navbar-static-top bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <i class="bi bi-music-note-list"></i>
+          UENA
+        </a>
+        <ul class="navbar-nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="margin-end bi bi-globe"></i>
+            </a>
+          </li>
+        </ul>
 
-    <!-- Text -->
-    <h3 class="text"> Welcome to UAENA Playground</h3>
-    <h1 class="IUtext"> IU </h1>
-    <h2 class="leejieuntext"> LEE JI EUN</h2>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/menu/menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/biography/biography.html">Biography</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <!-- Text -->
+      <div class="row">
+        <div class="col-12 col-md-12">
+          <h3 class="text">Welcome to UAENA Playground</h3>
+        </div>
+      </div>
 
-     <!-- Button -->
-     <button class="btn">All about IU!</button>
+      <div class="col-12 col-md-4">
+        <h1 class="IUtext">IU</h1>
+      </div>
+      <div class="col-12 col-md-4">
+        <h2 class="leejieuntext">LEE JI EUN</h2>
+      </div>
 
-    <!-- The video -->
-    <div class="container blur">
+      <!-- Button -->
+      <button class="btn" onclick="/menu/menu.html">All about IU!</button>
+      <!-- The video -->
       <div class="vidContainer">
         <video
           id="faceVideo"
           autoplay
           muted
           loop
-          src="assets/IU/Homepage/homepagebg.mp4"
+          src="/assets/IU/Homepage/homepagebg.mp4"
         ></video>
 
-        <div class="overlay blur">
-          <img alt="Hero" src="assets/IU/Homepage/homepageiu.png" />
+        <div class="overlay">
+          <img
+            class="hero-image"
+            alt="Hero"
+            src="/assets/IU/Homepage/homepageiu.png"
+          />
         </div>
-
       </div>
     </div>
+    <nav class="navbar fixed-bottom bg-">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Fixed bottom</a>
+      </div>
+    </nav>
 
     <!-- Javascript -->
     <script
       type="text/javascript"
-      src="assets/plugins/bootstrap/js/bootstrap.min.js"
+      src="/assets/plugins/bootstraps/js/bootstrap.min.js"
     ></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="/assets/js/main.js"></script>
   </body>
 </html>
