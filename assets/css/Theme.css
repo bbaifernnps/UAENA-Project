@@ -120,6 +120,11 @@ video {
 
 .overlay {
     position: absolute; 
+}
+
+.blur {
+    position: absolute;
+    object-fit: cover;
     left: 0;
     bottom: 0;
     height: 100vh;; 
