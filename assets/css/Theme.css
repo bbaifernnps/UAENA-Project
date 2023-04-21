@@ -6,34 +6,40 @@ nav {
   background-color: white;
   z-index: 10;
 }
-.container{
+.container {
     position: absolute;
 }
-img {
+
+.vidContainer {
+  position: relative;
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 100%;
+  background-attachment: scroll;
 }
-video {
+
+.vidContainer video {
   width: 100%;
   height: auto;
   filter:blur(4px);
+  z-index: 1;
 
 }
-.vidContainer faceVideo{
+/* .vidContainer #faceVideo{
     position: absolute;
     object-fit: cover;
     object-position: top;
-    z-index: 0;
+    z-index: 1;
+} */
+.vidContainer .overlay {
+  position: absolute; 
+  top: 0px;
+  left: 0px;
+  z-index: 2;
 }
+.vidContainer .overlay img {
+  width: 100%;
+  height: auto;
 
-  /* The hero image */
-.hero-image {
-    position: absolute;
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
 }
   
   /* Place text in front of all elements */
@@ -115,12 +121,10 @@ video {
   border: none;
   cursor: pointer;
   outline: none;
-  z-index: 2;
+  z-index: 3;
 } 
 
-.overlay {
-    position: absolute; 
-}
+
 
 .blur {
     position: absolute;
