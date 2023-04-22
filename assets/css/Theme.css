@@ -15,7 +15,10 @@ html, body {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  
+  /* Add the blur effect */
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+
   z-index: -1;
 }
 
