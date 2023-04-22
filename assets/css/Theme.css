@@ -140,4 +140,15 @@ nav {
     z-index: 1;
 }
 
-.navbar .fixed-bottom 
+.audiowrap audio {
+  width:230px;
+  height: 28px;
+}
+
+.brand-audio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+  
+}
