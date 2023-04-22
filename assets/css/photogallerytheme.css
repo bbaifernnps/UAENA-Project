@@ -1,6 +1,8 @@
 html, body {
     height: 100%;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
   
   #bg-video {
@@ -12,15 +14,15 @@ html, body {
     z-index: -1;
   }
   
-  .content {
+  .container {
     position: relative;
+    min-height: 100vh;
     z-index: 1;
   }
 
- /*Text*/
  /* Text*/
-.iutext {
-    position: absolute;
+ .container .iutext {
+    /* position: absolute; */
     width: 158px;
     left: 24px;
     top: 66px;
@@ -38,8 +40,8 @@ html, body {
     z-index: 2;
     }
   
-  .photogallerytext{
-    position: absolute;
+    .container .photogallerytext{
+    /* position: absolute; */
     width: 291px;
     left: 24px;
     top: 152px;
@@ -59,22 +61,84 @@ html, body {
 
 
 /*Photocard section*/
-.photocard {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    left: 10px;
-    position: relative;
-  }
-  
-  .photocard img {
-    width: 77px;
-    height: 122px;
-    border-radius: 11px;
-    filter: drop-shadow(4px 5px 4px rgba(0, 0, 0, 0.25));
-  }
 
-.row {
-    position: relative;
-    top: 220px;
-    margin-bottom: 5%;
+.container .image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
 }
+
+.container .image-container .image {
+  height: 200px;
+  width: 150px;
+  border: 10px solid #FFFFFF;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.container .image-container .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: .2s linear;
+}
+
+.container .image-container .image:hover img {
+  transform: scale(1.1);
+}
+
+.container .popup-image {
+   position:fixed;
+   top: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0,0.9);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+.container .popup-image span{
+  position: absolute;
+  top: 0; right: 10px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #FFFFFF;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.container .popup-image img {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #FFFFFF;
+  width: 750px;
+  object-fit: cover;
+}
+
+@media (max-width:760px) {
+  .container .popup-image img {
+    height: 75%;
+    width: auto;
+  }
+}
+@media (max-width:991px) {
+  .container .popup-image img {
+    width: 82%;
+  }
+}
+@media (max-width: 1199px) { 
+  .container .popup-image img {
+    width: 80%;
+  }
+ }
+
+@media (max-width: 1399px) { 
+  .container .popup-image img {
+    width: 80%;
+  }
+ }
