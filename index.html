@@ -27,13 +27,15 @@
 </head>
 
 <body>
+  <!-- <div w3-include-html="/navbar.html"></div> -->
+
   <nav class="navbar navbar-static-top bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <i class="bi bi-music-note-list"></i>
         UENA
       </a>
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ms-auto me-2">
         <li class="nav-item ">
           <a class="nav-link  " href="#">
             <i class="margin-end bi bi-globe float-right"></i>
@@ -48,70 +50,84 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="/index.html">
+              <i class="fa fa-fw fa-home"></i> Homepage
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/menu/menu.html">Menu</a>
+            <a class="nav-link" href="/menu/menu.html">
+              <i class="fa-solid fa-grid"></i> Main Menu</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/biography/biography.html">Biography</a>
+            <a class="nav-link" href="/biography/biography.html">
+              <i class="fa-regular fa-heart" style="color: #566598;"></i>
+              Biography</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/discography/discography.html">
+              <i class="fa fa-music"></i> Discography</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/movies/movie.html">
+              <i class="fa-regular fa-clapperboard-play"></i> Movies & Series</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/photogallery/photogallery.html">
+              <i class="fa  fa-image"></i> Photo Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/musicvideo/musicvideo.html">
+              <i class="fa-brands fa-youtube"></i> Music Video</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-gear"></i> Setting</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa-solid fa-moon-cloud"></i> Night Mode</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="container-fluid">
-    <!-- Text -->
-    <div class="row">
-      <div class="col-12 col-md-12">
-        <h3 class="text">Welcome to UAENA Playground</h3>
-      </div>
-    </div>
 
-    <div class="col-12 col-md-4">
-      <h1 class="IUtext">IU</h1>
-    </div>
-    <div class="col-12 col-md-4">
-      <h2 class="leejieuntext">LEE JI EUN</h2>
-    </div>
-    <div class="col-12 col-md-12 ">
-      <!-- Button -->
-      <button class="btn" onclick="redirectToMenuPage()">
-        <i class="fa-regular fa-heart" style="color: #566598;"></i>
-        All about IU!</button>
-    </div>
+  <!--Background-->
+  <video id="bg-video" autoplay loop muted>
+    <source src="/assets/IU/Homepage/homepagebg.mp4" type="video/mp4">
+  </video>
+  <div id="bg-image"></div>
+  <!-- Text -->
+  <h3 class="text">Welcome to UAENA Playground</h3>
+  <h1 class="IUtext">IU</h1>
+  <h2 class="leejieuntext">LEE JI EUN</h2>
 
+  <!-- Button -->
+  <button class="btn" onclick="redirectToMenuPage()">
+    <i class="fa-regular fa-heart" style="color: #566598;"></i>
+    All about IU!</button>
 
-    <!-- The video -->
-    <div class="vidContainer">
-      <div class="overlay">
-        <img src="/assets/IU/Homepage/homepageiu.png" alt="IU">
-      </div>
-      <video autoplay loop muted src="/assets/IU/Homepage/homepagebg.mp4"></video>
-    </div>
-  </div>
   <nav class="navbar fixed-bottom">
     <div class="container-fluid">
-      <div class="col-9">
-        <audio controls autoplay loop controlslist="play nodownload">
+      <div class="audiowrap">
+        <audio controls autoplay loop controlslist="play nodownload ">
           <source src="/assets/IU/Audio/Through the Night.mp3" type="audio/mp3" />
           Your browser does not support the <audio> element.
           </audio>
       </div>
-      <div class="col-3">
-        <i class="fa-brands fa-youtube fa-xl me-2" style="color: #566598;"></i>
-        <i class="fa-brands fa-spotify fa-xl me-2" style="color: #566598;"></i>
-        <i class="fa-brands fa-soundcloud fa-xl" style="color: #566598;"></i>
+      <div class="col-2">
+        <i class="fa-brands fa-youtube  me-2" style="color: #566598;"></i>
+        <i class="fa-brands fa-spotify  me-2" style="color: #566598;"></i>
+        <i class="fa-brands fa-soundcloud " style="color: #566598;"></i>
       </div>
-
-    </div>
-
   </nav>
 
 
   <!-- Javascript -->
   <script type="text/javascript" src="/assets/plugins/bootstraps/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="/assets/js/main.js"></script>
+  <script type="text/javascript" src="/assets/js/includeHTML.js"></script>
+  <script>includeHTML();</script>
 </body>
 
 </html>
