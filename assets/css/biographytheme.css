@@ -81,44 +81,50 @@
   filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.25));
   border-radius: 42px;
   margin-bottom: 5%;
+  margin-right: 5%;
 }
 
 /*Information Part*/
 /*Rectangle Box*/
+.boxcontainer{
+  position: relative;
+  top:880px ;
+}
+
 .rectangle1{
-  position: absolute;
+  position: relative;
   width: 348px;
   height: 314px;
-  left: 21px;
-  top: 1678px;
+  top: 10px;
 
   background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(5px);
   border-radius: 38px;
+  margin-right: 5%;
+  margin-bottom: 10%;
+  margin-left: 5%;
   }
   
 .rectangle2{
-  position: absolute;
+  position: relative;
   width: 348px;
   height: 134px;
-  left: 24px;
-  top: 2020px;
-
   background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(5px);
   border-radius: 38px;
+  margin-right: 5%;
+  margin-bottom: 10%;
+  margin-left: 5%;
   }
 
 .rectangle3{
-  position: absolute;
+  position: relative;
   width: 208px;
   height: 247px;
-  left: 21px;
-  top: 2192px;
-
   background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(5px);
   border-radius: 38px;
+  margin-left: 5%;
   }
 
   /*Contents in box*/
@@ -149,9 +155,9 @@
   flex-grow: 0;
 
   /* Other styles */
-  position: absolute;
+  position: relative;
   left: 39px;
-  top: 1695px;
+  top: 10px;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
@@ -188,9 +194,9 @@
   flex-grow: 0;
 
   /* Other styles */
-  position: absolute;
+  position: relative;
   left: 42px;
-  top: 2032px;
+  top: 10px;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
@@ -204,11 +210,11 @@
 
 /*Information in BOX*/
 .infotext1{
-  position: absolute;
+  position: relative;
   width: 164px;
   height: 240px;
-  left: 43px;
-  top: 1732px;
+  top: 20px;
+  left: 10px;
 
   font-family: 'Inter';
   font-style: normal;
@@ -224,20 +230,21 @@
 }
 
 .iuprofile2 {
-  position: absolute;
+  position: relative;
   width: 206px;
   height: 280px;
-  left: 191px;
-  top: 1695px;
+  top: -120px;
+  left: 70px;
+  
   filter: drop-shadow(-13px 14px 4px rgba(0, 0, 0, 0.25));
 }
 
 .infotext2{
-  position: absolute;
+  position: relative;
   width: 309px;
   height: 75px;
-  left: 43px;
-  top: 2064px;
+  top: 16px;
+  left: 10px;
 
   font-family: 'Inter';
   font-style: normal;
@@ -253,11 +260,12 @@
 }
 
 .infotext3{
-  position: absolute;
+  position: relative;
   width: 179px;
   height: 217px;
-  left: 38px;
-  top: 2214px;
+  top: 15px;
+  left: 7px;
+
 
   font-family: 'Inter';
   font-style: normal;
@@ -297,9 +305,9 @@
   flex-grow: 0;
 
   /* Other styles */
-  position: absolute;
-  left: 217px;
-  top: 2427px;
+  position: relative;
+  left: 10%;
+  top:10%;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
@@ -307,17 +315,6 @@
   border: none;
   cursor: pointer;
   outline: none;
-}
-
-/*Discography menu*/
-.discography{
-  position: absolute;
-  width: 132.36px;
-  height: 273.55px;
-  left: 237px;
-  top: 2148px;
-
-  filter: drop-shadow(-8px 13px 4px rgba(0, 0, 0, 0.25));
 }
 
   body {
