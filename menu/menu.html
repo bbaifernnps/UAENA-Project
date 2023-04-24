@@ -1,83 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>UAENA Playground</title>
 
-    <!-- Meta -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Bootstrap 5 Mobile App Landing Page Template"
-    />
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media" />
+<head>
+  <title>UAENA Playground</title>
 
-     <!-- Google Font -->
-    <link 
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Mitr:wght@400;500;700&display=swap" 
-      rel="stylesheet"
-    />
-    
+  <!-- Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bootstrap 5 Mobile App Landing Page Template" />
+  <meta name="author" content="Xiaoying Riley at 3rd Wave Media" />
 
-    <!-- FontAwesome JS-->
-    <script defer src="/assets/fontawesome/js/all.min.js"></script>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Mitr:wght@400;500;700&display=swap"
+    rel="stylesheet" />
 
-    <!-- Plugins CSS -->
-    <link
-      rel="stylesheet"
-      href="/assets/plugins/bootstraps/css/bootstrap.min.css"
-    />
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="/assets/css/menutheme.css" />
-  </head>
-  <body>
+
+  <!-- FontAwesome JS-->
+  <script defer src="/assets/fontawesome/js/all.min.js"></script>
+
+  <!-- Plugins CSS -->
+  <link rel="stylesheet" href="/assets/plugins/bootstraps/css/bootstrap.min.css" />
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="/assets/css/menutheme.css" />
+  <link rel="stylesheet" href="/assets/css/menu-transition.css" />
+</head>
+
+<body>
+  <div class="container">
     <!-- The Menu Background -->
-    <div class="container background">
-      <img alt="menubackground" src="/assets/IU/Menu/menubg.png" />
-    </div>
-
+    <div id="bg-image"></div>
     <!-- Menu Icon -->
     <!-- Photogallery -->
-    <div class="overlay photogallery">
-      <img alt="photogallery" src="/assets/IU/Menu/photogallery.png" >
+    <div class="photogallery">
+      <img alt="photogallery" src="/assets/IU/Menu/photogallery.png">
     </div>
 
     <!-- Music Video -->
-    <div class="overlay musicvideo">
+    <div class="musicvideo">
       <img alt="musicvideo" src="/assets/IU/Menu/musicvideo.png">
     </div>
 
     <!-- Movies -->
-    <div class="overlay movies">
+    <div class="movies">
       <img alt="movies" src="/assets/IU/Menu/movies.png">
     </div>
 
     <!-- Discography -->
-    <div class="overlay discography">
+    <div class="discography">
       <img alt="discography" src="/assets/IU/Menu/discography.png">
     </div>
 
     <!-- Biography -->
-    <div class="overlay biography">
+    <div class="biography">
       <img alt="biography" src="/assets/IU/Menu/biography.png">
     </div>
 
 
     <!-- Menu Button -->
-    <button class="photogallerybtn">Photo Gallery</button>
-    <button class="musicvideobtn">Music Video</button>
-    <button class="moviesbtn">Movies and Series</button>
-    <button class="discographybtn">Discography</button>
-    <button class="biographybtn">IU's Biography</button>
-  
+    <button class="photogallerybtn" onclick="redirectToPhotoGalleryPage()">Photo Gallery</button>
+    <button class="musicvideobtn" onclick="redirectToMusicVideoPage()">Music Video</button>
+    <button class="moviesbtn" onclick="redirectToMoviesPage()">Movies and Series</button>
+    <button class="discographybtn" onclick="redirectToDiscographyPage()">Discography</button>
+    <button class="biographybtn" onclick="redirectToBiographyPage()">IU's Biography</button>
 
-    
-    <!-- Javascript -->
-    <script
-      type="text/javascript"
-      src="/assets/plugins/bootstrap/js/bootstrap.min.js"
-    ></script>
-    <script type="text/javascript" src="/assets/js/main.js"></script>
-  </body>
+  </div>
+
+
+
+  <!-- Javascript -->
+  <script type="text/javascript" src="/assets/plugins/bootstraps/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/assets/js/main.js"></script>
+</body>
+
 </html>

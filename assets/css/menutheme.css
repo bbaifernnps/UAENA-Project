@@ -1,20 +1,28 @@
-.container {
-  position: relative;
-}
-
 html, body {
   height: 100%;
   margin: 0;
-  position:relative;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  animation:  transitionIn 0.75s;
 }
 
-.background img {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -1;
+#bg-image {
+ /* The image used */
+ background-image: url("/assets/IU/Menu/menubg.png");
+ /* Full height */
+ height: 100vh;
+ object-fit: cover;
+ /* Center and scale the image nicely */
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ z-index: 0;
+
 }
 
 .overlay {
@@ -25,43 +33,64 @@ html, body {
 
 .photogallery img{
   position: absolute;
-  top: 130px;
-  left: 7px;
+  top: 16%;
+  left: 8%;
   width: 104px !important;
   height:62px !important;
+  /* Safari */
+  -webkit-transform: rotate(10deg);  
+  /* Standard syntax */	
+  transform: rotate(10deg);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50); */
+
 }
 
 .musicvideo img{
   position: absolute;
-  top: 131px;
-  left: 140px;
+  top: 23%;
+  left: 44%;
   width: 113px !important;
   height: 96px !important;
+    /* Safari */
+    -webkit-transform: rotate(-11deg);  
+    /* Standard syntax */	
+    transform: rotate(-11deg);
 }
 
 .movies img{
   position: absolute;
-  top: 359px;
-  left: 72px;
+  top: 48%;
+  left: 13%;
   width: 199px !important;
   height: 78px !important;
+      /* Safari */
+      -webkit-transform: rotate(0deg);  
+      /* Standard syntax */	
+      transform: rotate(0deg);
 }
 
 .discography img{
   position: absolute;
-  top: 513.5px;
-  left: -3.67px;
+  top: 65%;
+  left: 5%;
   width: 164px !important;
   height: 286px !important;
-
+        /* Safari */
+        -webkit-transform: rotate(0deg);  
+        /* Standard syntax */	
+        transform: rotate(0deg);
 }
 
 .biography img{
   position: absolute;
-  top: 446px;
-  left: 199px;
+  top: 56%;
+  left: 50%;
   width: 199px !important;
-  height: 348px !important;
+  height: 340px !important;
+  /* Safari */
+  -webkit-transform: rotate(0deg);  
+  /* Standard syntax */	
+  transform: rotate(0deg);
 }
 
 
@@ -92,15 +121,16 @@ html, body {
 
   /* Other styles */
   position: absolute;
-  left: 20px;
-  top: 82px;
+  left: 9%;
+  top: 11%;
   background: #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.50);
   border-radius: 50px;
   white-space: nowrap;
   border: none;
   cursor: pointer;
   outline: none;
+  z-index: 1;
 }
 
 .musicvideobtn {
@@ -128,10 +158,10 @@ html, body {
 
   /* Other styles */
   position: absolute;
-  left: 200px;
-  top: 95px;
+  left: 45%;
+  top: 18%;
   background: #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 50px;
   white-space: nowrap;
   border: none;
@@ -164,10 +194,10 @@ html, body {
 
   /* Other styles */
   position: absolute;
-  left: 74px;
-  top: 325px;
+  left: 20%;
+  top: 43%;
   background: #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 50px;
   white-space: nowrap;
   border: none;
@@ -200,10 +230,10 @@ html, body {
 
   /* Other styles */
   position: absolute;
-  left: 50px;
-  top: 568px;
+  left: 13%;
+  top: 75%;
   background: #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 50px;
   white-space: nowrap;
   border: none;
@@ -213,7 +243,7 @@ html, body {
 
 .biographybtn {
   /* Width and height */
-  width: 121px;
+  width: 123px;
   height: 34px;
 
   /* Font styles */
@@ -236,8 +266,8 @@ html, body {
 
   /* Other styles */
   position: absolute;
-  left: 251px;
-  top: 420px;
+  left: 57%;
+  top: 53%;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
@@ -246,3 +276,4 @@ html, body {
   cursor: pointer;
   outline: none;
 }
+
