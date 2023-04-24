@@ -81,8 +81,7 @@ html, body {
 /*Card*/
 .cardstack{
   position: relative;
-  margin-top: 10px;
-  /* top: 880px; */
+  top: 30px;
 }
 
 .card{
@@ -102,7 +101,7 @@ html, body {
 /*Rectangle Box*/
 .boxcontainer{
   position: relative;
-  top:880px ; 
+  top: 20px; 
 }
 
 .rectangle1{
