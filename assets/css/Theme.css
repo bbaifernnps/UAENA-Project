@@ -4,10 +4,7 @@ html, body {
   padding: 0;
   box-sizing: border-box;
 }
-.bg {
 
-
-}
 
 #bg-video {
   position: fixed;
@@ -115,11 +112,11 @@ nav {
   line-height: 16px;
   color: #000000;
 
-  position: fixed;
+  position: absolute;
   width: 156px;
   height: 48px;
-  left: 213px;
-  top: 705px;
+  right: 8%;
+  bottom: 8%;
 
   background: #F7F1FF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
