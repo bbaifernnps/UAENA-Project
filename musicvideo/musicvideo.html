@@ -223,15 +223,21 @@
         $(document).ready(function () {
             const videoPlayerList = document.querySelectorAll("video");
             console.log(videoPlayerList);
+            // Add click event listener to all video elements
             $('video').on('click', function (e) {
                 let vids = $.makeArray($('video'));
                 console.log(vids);
+
+                //Pause the video arnd remove active status
                 vids.forEach(vid => {
                     vid.pause();
                     vid.classList.remove('active');
                 });
 
+                //Toggle active status to the clicked video
                 $(this).toggleClass('active');
+
+                //Play and pause the video
                 if ($(this).is('.active')) {
                     this.play();
                 } else {
