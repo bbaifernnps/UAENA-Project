@@ -32,6 +32,76 @@
     <link rel="stylesheet" href="/assets/css/menutheme.css" />
   </head>
   <body>
+
+    <!--Navigation Bar -->
+
+    <nav class="navbar navbar-static-top bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/IU/Main/logo.png" alt="UAENAlogo">
+        </a>
+        <ul class="navbar-nav ms-auto me-2">
+          <li class="nav-item ">
+            <a class="nav-link  " href="#">
+              <i class="margin-end bi bi-globe float-right"></i>
+            </a>
+          </li>
+        </ul>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Hamburger Menu-->
+        
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">
+                <i class="fa fa-fw fa-home"></i> Homepage
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/menu/menu.html">
+                <i class="fa fa-border-all"></i> Main Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/biography/biography.html">
+                <i class="fa-regular fa-heart" style="color: #566598;"></i>
+                Biography</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/discography/discography.html">
+                <i class="fa fa-music"></i> Discography</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/movies/movie.html">
+                <i class="fa fa-film"></i> Movies & Series</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/photogallery/photogallery.html">
+                <i class="fa  fa-image"></i> Photo Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/musicvideo/musicvideo.html">
+                <i class="fa-brands fa-youtube"></i> Music Video</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-gear"></i> Setting</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa fa-cloud-moon"></i> Night Mode</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
     <!-- The Menu Background -->
     <div class="container background">
       <img alt="menubackground" src="/assets/IU/Menu/menubg.png" />
@@ -71,6 +141,21 @@
     <button class="discographybtn">Discography</button>
     <button class="biographybtn">IU's Biography</button>
   
+    <!--Bottom Navigation Bar-->  
+    <nav class="navbar fixed-bottom">
+      <div class="container-fluid">
+        <div class="audiowrap">
+          <audio controls autoplay loop controlslist="play nodownload ">
+            <source src="/assets/IU/Audio/Through the Night.mp3" type="audio/mp3" />
+            Your browser does not support the <audio> element.
+            </audio>
+        </div>
+        <div class="brand-audio">
+          <i class="fa-brands fa-youtube  " style="color: #566598;"></i>
+          <i class="fa-brands fa-spotify " style="color: #566598;"></i>
+          <i class="fa-brands fa-soundcloud " style="color: #566598;"></i>
+        </div>
+    </nav>
 
     
     <!-- Javascript -->
