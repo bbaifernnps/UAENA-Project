@@ -1,10 +1,5 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.container {
+s
+.container-fluid {
   position: absolute;
   margin: 0;
   padding: 0;
@@ -16,7 +11,8 @@ html, body {
  background-image: url("/assets/IU/Menu/menubg.png");
  /* Full height */
  height: 100vh;
- object-fit: cover;
+
+ /* object-fit: cover; */
  /* Center and scale the image nicely */
  background-position: center;
  background-repeat: no-repeat;
@@ -25,9 +21,6 @@ html, body {
 
 }
 
-.overlay {
-  position: absolute;  
-}
 
 /* Menu Icon */
 
@@ -59,8 +52,8 @@ html, body {
 
 .movies img{
   position: absolute;
-  top: 48%;
-  left: 13%;
+  top: 44%;
+  left: 17%;
   width: 199px !important;
   height: 78px !important;
       /* Safari */
@@ -71,8 +64,8 @@ html, body {
 
 .discography img{
   position: absolute;
-  top: 65%;
-  left: 5%;
+  top: 60%;
+  left: 7%;
   width: 164px !important;
   height: 286px !important;
         /* Safari */
@@ -194,8 +187,8 @@ html, body {
 
   /* Other styles */
   position: absolute;
-  left: 20%;
-  top: 43%;
+  left: 23%;
+  top: 39%;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 50px;
@@ -231,7 +224,7 @@ html, body {
   /* Other styles */
   position: absolute;
   left: 13%;
-  top: 75%;
+  top: 68%;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 50px;
