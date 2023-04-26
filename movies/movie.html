@@ -18,10 +18,10 @@
     rel="stylesheet" />
 
 
-  <!-- FontAwesome JS-->
+  <!-- FontAwesome JS Plugin for symbol and icons-->
   <script defer src="/assets/fontawesome/js/all.min.js"></script>
 
-  <!-- Plugins CSS -->
+  <!-- Bootstrap Plugins CSS -->
   <link rel="stylesheet" href="/assets/plugins/bootstraps/css/bootstrap.min.css" />
   <!-- Theme CSS -->
   <link rel="stylesheet" href="/assets/css/musicvideotheme.css" />
@@ -31,7 +31,9 @@
 
 
 
-  <!--Carousel-->
+  <!--Carousel containing movies by the implementing of the plugin Bootstrap, the carousel can be clicked both through that bar
+  at the bottom of the screen or with the arrow on left and right of the scree. Each slide of carousel contains video of movies
+ with the cast of IU with a caption of description and the name of the movie-->
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -85,6 +87,9 @@
 
   <script type="text/javascript" src="/assets/plugins/bootstraps/js/bootstrap.min.js"></script>
 
+  <!--Adding the case for the video in carousel to be paused when the video is not shown on the screen since the 
+  video is autoplay and are not muted so it's really important to make it play separately just when it turns up
+on the screen-->
   <script>
     $(document).ready(function () {
       // invoke the carousel
