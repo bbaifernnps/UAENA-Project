@@ -8,14 +8,13 @@ html, body {
 #bg-image {
   /* The image used */
   background-image: url("/assets/IU/Biography/iuprofile.png");
-  /* width: 556px;
-  height: 798px; */
   position: relative; 
   
-  /* Full height */
+  /* Make the image full height */
   height: 100vh;
   object-fit: cover;
-  /* Center and scale the image nicely */
+
+  /* Make it on top of other elements by putting the z-index */
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,7 +22,7 @@ html, body {
   z-index:1;
 }
 
-
+/*Contaioner for contains all the elements*/
 .container {
     position: absolute;
 }
@@ -39,7 +38,8 @@ html, body {
     z-index: 0;
   }
   
-/* Text*/
+
+  /* Text Section*/
 .knowmoretext {
   position: absolute;
   width: 243px;
@@ -78,7 +78,7 @@ html, body {
   z-index: 2;
   }
 
-/*Card*/
+/*Card Section*/
 .cardstack{
   position: relative;
   top: 30px;
@@ -97,8 +97,9 @@ html, body {
   margin-right: 5%;
 }
 
-/*Information Part*/
-/*Rectangle Box*/
+/*Information Section*/
+
+/* The Rectangle Boxes*/
 .boxcontainer{
   position: relative;
   top: 20px; 
@@ -294,6 +295,7 @@ html, body {
 }
 
 /*Button*/
+
 .nextbtn {
   /* Width and height */
   width: 160px;
@@ -336,8 +338,10 @@ html, body {
     background-size: cover;
   }
   
+
 /* --- Flip card --- */
 
+/*The front and back style of the flipping card*/
 .front,
 .back {
   display: flex;
@@ -354,12 +358,13 @@ html, body {
   backface-visibility: hidden;
   transform-style: preserve-3d;
   transition: ease-in-out 600ms;
-  // overflow: hidden;
+  overflow: hidden;
 }
 
+/*The styling of front side of the card*/
 .front {
   background-size: cover;
-  // background-blend-mode: overlay;
+  background-blend-mode: overlay;
   padding: 2rem;
   font-size: 1.618rem;
   font-weight: 600;
@@ -378,9 +383,13 @@ html, body {
     opacity: .25;
     z-index: -1;
   }
+
+  /* Turning the card in y-axis for 180 degrees for flipping*/
   .card:hover & {
     transform: rotateY(180deg);
   }
+
+  /*Flip the card back*/
   .card:nth-child(even):hover & {
     transform: rotateY(-180deg);
   }
@@ -400,9 +409,12 @@ html, body {
     }
   }
   
+  /*When hovering the back side of the card, there will be no change, but the card will remain the same to let the readers
+  read the information on the card.*/
   .card:hover & {
     transform: rotateY(0deg);
   }
+  
   
   .card:nth-child(even) & {
     transform: rotateY(180deg);
