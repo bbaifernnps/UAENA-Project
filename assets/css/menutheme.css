@@ -270,24 +270,3 @@ s
   outline: none;
 }
 
-/*์    Navigtion  */
-nav {
-  background-color: white;
-  z-index: 10;
-}
-.collapse .navbar-collapse .navbar-nav .nav-item .nav-link span {
-  position: absolutes;
-}
-
-.audiowrap audio {
-  width:230px;
-  height: 28px;
-}
-
-.brand-audio {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: flex-end;
-  
-}

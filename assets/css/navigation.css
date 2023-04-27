@@ -1,0 +1,23 @@
+/*์    Navigtion  */
+nav {
+    background-color: white;
+    z-index: 10;
+  }
+  .collapse .navbar-collapse .navbar-nav .nav-item .nav-link span {
+    position: absolutes;
+  }
+  
+  /* Audio player sizing */
+  .audiowrap audio {
+    width:230px;
+    height: 28px;
+  }
+  /* Icon audio sizing  and position */
+  
+  .brand-audio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-end;
+    
+  }
