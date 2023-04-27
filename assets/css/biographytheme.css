@@ -1,8 +1,11 @@
-html, body {
+body {
   height: 100%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: linear-gradient(180deg, #D6DFFE 0%, #EDE2FF 33.72%, #BFCEFF 66.45%, #E0E7FF 95.21%);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 #bg-image {
@@ -24,20 +27,22 @@ html, body {
 }
 
 
+/* responsive background image when desktop size*/
+@media (min-width:767px) {
+  #bg-image {
+    position: relative;
+    object-fit: cover;
+    background-size: 50%;
+    left: -320px;
+  }
+}
+
 .container {
     position: absolute;
 }
   
 
-.vbackground {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(0deg, rgba(47, 46, 74, 0.2), rgba(47, 46, 74, 0.2));
-    z-index: 0;
-  }
+
   
 /* Text*/
 .knowmoretext {
@@ -333,12 +338,7 @@ html, body {
   outline: none;
 }
 
-  body {
-    background: linear-gradient(180deg, #D6DFFE 0%, #EDE2FF 33.72%, #BFCEFF 66.45%, #E0E7FF 95.21%);
-    background-attachment: fixed;
-    background-size: cover;
-  }
-  
+
 /* --- Flip card --- */
 
 .front,
@@ -473,3 +473,4 @@ html, body {
     }
   }
 }
+
