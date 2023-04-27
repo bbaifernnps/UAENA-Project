@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="/assets/css/menutheme.css" />
 </head>
 
-<body>
+<body data-barba="wrapper">
 
   <!--Navigation Bar -->
 
@@ -95,45 +95,45 @@
   </nav>
 
 
+  <div data-barba="container" data-barba-namespace="menu" class="container-fluid" id="intro">
+    <!-- The Menu Background -->
+    <div id="bg-image"></div>
+    <!-- Menu Icon -->
+    <!-- Photogallery -->
+    <div class="photogallery">
+      <img alt="photogallery" src="/assets/IU/Menu/photogallery.png">
+    </div>
 
-  <!-- The Menu Background -->
-  <div class="container background">
-    <img alt="menubackground" src="/assets/IU/Menu/menubg.png" />
+    <!-- Music Video -->
+    <div class="musicvideo">
+      <img alt="musicvideo" src="/assets/IU/Menu/musicvideo.png">
+    </div>
+
+    <!-- Movies -->
+    <div class="movies">
+      <img alt="movies" src="/assets/IU/Menu/movies.png">
+    </div>
+
+    <!-- Discography -->
+    <div class="discography">
+      <img alt="discography" src="/assets/IU/Menu/discography.png">
+    </div>
+
+    <!-- Biography -->
+    <div class="biography">
+      <img alt="biography" src="/assets/IU/Menu/biography.png">
+    </div>
+
+
+    <!-- Menu Button -->
+    <button class="photogallerybtn" onclick="redirectToPhotoGalleryPage()">Photo Gallery</button>
+    <button class="musicvideobtn" onclick="redirectToMusicVideoPage()">Music Video</button>
+    <button class="moviesbtn" onclick="redirectToMoviesPage()">Movies and Series</button>
+    <button class="discographybtn" onclick="redirectToDiscographyPage()">Discography</button>
+    <button class="biographybtn" onclick="redirectToBiographyPage()">IU's Biography</button>
+
   </div>
 
-  <!-- Menu Icon Picture for each page -->
-  <!-- Photogallery -->
-  <div class="overlay photogallery">
-    <img alt="photogallery" src="/assets/IU/Menu/photogallery.png">
-  </div>
-
-  <!-- Music Video -->
-  <div class="overlay musicvideo">
-    <img alt="musicvideo" src="/assets/IU/Menu/musicvideo.png">
-  </div>
-
-  <!-- Movies -->
-  <div class="overlay movies">
-    <img alt="movies" src="/assets/IU/Menu/movies.png">
-  </div>
-
-  <!-- Discography -->
-  <div class="overlay discography">
-    <img alt="discography" src="/assets/IU/Menu/discography.png">
-  </div>
-
-  <!-- Biography -->
-  <div class="overlay biography">
-    <img alt="biography" src="/assets/IU/Menu/biography.png">
-  </div>
-
-
-  <!-- Menu Button for each page -->
-  <button class="photogallerybtn">Photo Gallery</button>
-  <button class="musicvideobtn">Music Video</button>
-  <button class="moviesbtn">Movies and Series</button>
-  <button class="discographybtn">Discography</button>
-  <button class="biographybtn">IU's Biography</button>
 
   <!--Bottom Navigation Bar-->
   <nav class="navbar fixed-bottom">
@@ -153,6 +153,11 @@
 
 
   <!-- Javascript -->
+  <!-- unpkg -->
+  <script src="https://unpkg.com/@barba/core"></script>
+
+  <!-- jsdelivr -->
+  <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
   <script type="text/javascript" src="/assets/plugins/bootstraps/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="/assets/js/main.js"></script>
 </body>

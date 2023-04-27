@@ -325,11 +325,7 @@ html, body {
   outline: none;
 }
 
-  body {
-    background: linear-gradient(180deg, #D6DFFE 0%, #EDE2FF 33.72%, #BFCEFF 66.45%, #E0E7FF 95.21%);
-    background-attachment: fixed;
-    background-size: cover;
-  }
+s
   
 
 /* --- Flip card --- */
@@ -387,20 +383,13 @@ html, body {
     transform: rotateY(-180deg);
   }
 }
-
+  /* Turning the card back in y-axis for 180 degrees for flipping*/
 .back {
   background: transparent;
   transform: rotateY(-180deg);
   padding: 0 2em;
   
-  .button {
-    background: linear-gradient(135deg, adjust-hue($primary, -20deg), $primary);
-    
-    &:before {
-      box-shadow: 0 0 10px 10px rgba($primary, 0.25);
-    background-color: rgba($primary, 0.25);
-    }
-  }
+}
   
   /*When hovering the back side of the card, there will be no change, but the card will remain the same to let the readers
   read the information on the card.*/
