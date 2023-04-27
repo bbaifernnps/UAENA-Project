@@ -28,15 +28,43 @@ body {
 
 
 /* responsive background image when desktop size*/
-@media (min-width:767px) {
+@media (min-width:665px) {
   #bg-image {
     position: relative;
     object-fit: cover;
-    background-size: 50%;
-    left: -320px;
+    background-size: 70vh;
+    left: -180px;
   }
 }
 
+@media (min-width:965px) {
+  #bg-image {
+    position: relative;
+    object-fit: cover;
+    background-size: 75vh;
+    left: -300px;
+  }
+  .knowmoretext {
+    font-size: 4vw;
+    }
+}
+
+@media (min-width:1065px) {
+  .knowmoretext {
+    font-size: 5vw;
+  }
+  .iutext{
+    font-size: 5vw;
+  }
+  #bg-image {
+    position: relative;
+    object-fit: cover;
+    background-size: 80vh;
+    left: -400px;
+  
+  }
+
+ }
 .container {
     position: absolute;
 }
