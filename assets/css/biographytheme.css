@@ -8,13 +8,14 @@ html, body {
 #bg-image {
   /* The image used */
   background-image: url("/assets/IU/Biography/iuprofile.png");
+  /* width: 556px;
+  height: 798px; */
   position: relative; 
   
-  /* Make the image full height */
+  /* Full height */
   height: 100vh;
   object-fit: cover;
-
-  /* Make it on top of other elements by putting the z-index */
+  /* Center and scale the image nicely */
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,20 +23,29 @@ html, body {
   z-index:1;
 }
 
-/*Contaioner for contains all the elements*/
+
 .container {
     position: absolute;
 }
   
 
-
-  /* Text Section*/
+.vbackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(47, 46, 74, 0.2), rgba(47, 46, 74, 0.2));
+    z-index: 0;
+  }
+  
+/* Text*/
 .knowmoretext {
   position: absolute;
   width: 243px;
   height: 68px;
-  right: 5%;
-  top: 10%;
+  left: 136px;
+  top: 112px;
 
   font-family: 'Mitr';
   font-style: normal;
@@ -53,8 +63,8 @@ html, body {
   position: absolute;
   width: 78px;
   height: 110px;
-  right: 17%;
-  top: 13%;
+  left: 292px;
+  top: 160px;
 
   font-family: 'Mitr';
   font-style: normal;
@@ -68,10 +78,11 @@ html, body {
   z-index: 2;
   }
 
-/*Card Section*/
+/*Card*/
 .cardstack{
   position: relative;
-  top: 30px;
+  margin-top: 10px;
+  /* top: 880px; */
 }
 
 .card{
@@ -82,20 +93,18 @@ html, body {
   height: 214px;
   background-color: transparent;
   border-style: none;
-  left: 10%;
-  padding: 0px;
+  left: 10%; 
   filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.25));
   /* border-radius: 42px; */
   margin-bottom: 5%;
   margin-right: 5%;
 }
 
-/*Information Section*/
-
-/* The Rectangle Boxes*/
+/*Information Part*/
+/*Rectangle Box*/
 .boxcontainer{
   position: relative;
-  top: 20px; 
+  top:50% ; 
 }
 
 .rectangle1{
@@ -288,7 +297,6 @@ html, body {
 }
 
 /*Button*/
-
 .nextbtn {
   /* Width and height */
   width: 160px;
@@ -313,9 +321,9 @@ html, body {
   flex-grow: 0;
 
   /* Other styles */
-  position: absolute;
-  right: 10%;
-  bottom:15%;
+  position: relative;
+  left: 10%;
+  top:10%;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
@@ -325,12 +333,14 @@ html, body {
   outline: none;
 }
 
-s
+  body {
+    background: linear-gradient(180deg, #D6DFFE 0%, #EDE2FF 33.72%, #BFCEFF 66.45%, #E0E7FF 95.21%);
+    background-attachment: fixed;
+    background-size: cover;
+  }
   
-
 /* --- Flip card --- */
 
-/*The front and back style of the flipping card*/
 .front,
 .back {
   display: flex;
@@ -347,17 +357,16 @@ s
   backface-visibility: hidden;
   transform-style: preserve-3d;
   transition: ease-in-out 600ms;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
-/*The styling of front side of the card*/
 .front {
   background-size: cover;
-  background-blend-mode: overlay;
+  // background-blend-mode: overlay;
   padding: 2rem;
   font-size: 1.618rem;
   font-weight: 600;
-  color: transparent;
+  color: transparent;;
   overflow: hidden;
   font-family: Poppins, sans-serif;
   &:before {
@@ -372,31 +381,31 @@ s
     opacity: .25;
     z-index: -1;
   }
-
-  /* Turning the card in y-axis for 180 degrees for flipping*/
   .card:hover & {
     transform: rotateY(180deg);
   }
-
-  /*Flip the card back*/
   .card:nth-child(even):hover & {
     transform: rotateY(-180deg);
   }
 }
-  /* Turning the card back in y-axis for 180 degrees for flipping*/
+
 .back {
   background: transparent;
   transform: rotateY(-180deg);
   padding: 0 2em;
   
-}
+  .button {
+    background: linear-gradient(135deg, adjust-hue($primary, -20deg), $primary);
+    
+    &:before {
+      box-shadow: 0 0 10px 10px rgba($primary, 0.25);
+    background-color: rgba($primary, 0.25);
+    }
+  }
   
-  /*When hovering the back side of the card, there will be no change, but the card will remain the same to let the readers
-  read the information on the card.*/
   .card:hover & {
     transform: rotateY(0deg);
   }
-  
   
   .card:nth-child(even) & {
     transform: rotateY(180deg);
