@@ -31,7 +31,7 @@
 </head>
 
 <body>
-  <!--Navigation Bar -->
+  <!--Navigation Bar Section implementing by the use of Bootstrap plugin containing the hamburger menu that lists all the menu which lead to the other pages.-->
 
   <nav class="navbar navbar-static-top bg-body-tertiary">
     <div class="container-fluid">
@@ -51,7 +51,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- Navigation Hamburger Menu-->
+      <!-- Navigation Hamburger Menu listing all the sub-menu with the icon by class from fontawesome plugin-->
 
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -98,23 +98,24 @@
     </div>
   </nav>
 
-  <!--Background-->
+  <!--Background video being autoplayed, mute and loop-->
   <video id="bg-video" autoplay loop muted>
     <source src="/assets/IU/Homepage/homepagebg.mp4" type="video/mp4">
   </video>
   <div id="bg-image"></div>
-  <!-- Text -->
+
+  <!-- Text on the Landing page-->
   <h3 class="text">Welcome to UAENA Playground</h3>
   <h1 class="IUtext">IU</h1>
   <h2 class="leejieuntext">LEE JI EUN</h2>
 
-  <!-- Button -->
+  <!-- Button link with the next page which is the Menu page by using javascript function with the icon from fontawesome -->
   <button class="btn" onclick="redirectToMenuPage()">
     <i class="fa-regular fa-heart" style="color: #566598;"></i>
     All about IU!</button>
 
 
-  <!--Bottom Navigation Bar-->
+  <!--Bottom Navigation Bar containing the audio which is the song from IU. Users can control the audio-->
   <nav class="navbar fixed-bottom">
     <div class="container-fluid">
       <div class="audiowrap">
@@ -123,6 +124,8 @@
           Your browser does not support the <audio> element.
           </audio>
       </div>
+
+      <!--The logo youtube, spotify and soundcloud brand in the bottom navigation bar from fontawesome-->
       <div class="brand-audio">
         <i class="fa-brands fa-youtube  " style="color: #566598;"></i>
         <i class="fa-brands fa-spotify " style="color: #566598;"></i>
@@ -134,8 +137,7 @@
   <!-- Javascript -->
   <script type="text/javascript" src="/assets/plugins/bootstraps/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="/assets/js/main.js"></script>
-  <script type="text/javascript" src="/assets/js/includeHTML.js"></script>
-  <script>includeHTML();</script>
+ 
 </body>
 
 </html>

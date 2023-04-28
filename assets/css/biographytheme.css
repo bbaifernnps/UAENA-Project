@@ -11,8 +11,6 @@ body {
 #bg-image {
   /* The image used */
   background-image: url("/assets/IU/Biography/iuprofile.png");
-  /* width: 556px;
-  height: 798px; */
   position: relative; 
   
   /* Full height */
@@ -366,6 +364,10 @@ body {
 
 /* --- Flip card --- */
 
+/*The styling of the front siade and back side of all profilecards are written on this section while there are also the style
+of the card before flipping and the class function to make the card flip by using the rotation in Y axis of 180 degrees and
+-180 degrees to flip back in the opposite direction with the action by hover from the cursor*/
+
 .front,
 .back {
   display: flex;
@@ -382,12 +384,12 @@ body {
   backface-visibility: hidden;
   transform-style: preserve-3d;
   transition: ease-in-out 600ms;
-  // overflow: hidden;
+  overflow: hidden;
 }
 
 .front {
   background-size: cover;
-  // background-blend-mode: overlay;
+  background-blend-mode: overlay;
   padding: 2rem;
   font-size: 1.618rem;
   font-weight: 600;

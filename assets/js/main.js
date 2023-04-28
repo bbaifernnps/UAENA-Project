@@ -1,3 +1,5 @@
+//Function for the directing to the other pages.
+
 function redirectToMenuPage() {
   window.location.href="/menu/menu.html";  
 }
