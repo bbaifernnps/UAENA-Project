@@ -387,6 +387,7 @@ of the card before flipping and the class function to make the card flip by usin
   overflow: hidden;
 }
 
+/*Front style of the card with the before flipping style set*/
 .front {
   background-size: cover;
   background-blend-mode: overlay;
@@ -408,6 +409,8 @@ of the card before flipping and the class function to make the card flip by usin
     opacity: .25;
     z-index: -1;
   }
+
+  /*Card transforming function class when it was hovered*/
   .card:hover & {
     transform: rotateY(180deg);
   }
@@ -416,6 +419,7 @@ of the card before flipping and the class function to make the card flip by usin
   }
 }
 
+/*The back side of the card style*/
 .back {
   background: transparent;
   transform: rotateY(-180deg);
@@ -430,6 +434,7 @@ of the card before flipping and the class function to make the card flip by usin
     }
   }
   
+  /*Class for hovering the back side of the card*/
   .card:hover & {
     transform: rotateY(0deg);
   }
