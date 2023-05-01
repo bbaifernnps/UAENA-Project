@@ -10,7 +10,7 @@ body {
 
 #bg-image {
   /* The image used */
-  background-image: url("/assets/IU/Biography/iuprofile.png");
+  background-image: url("../../assets/IU/Biography/iuprofile.png");
   position: relative; 
   
   /* Full height */

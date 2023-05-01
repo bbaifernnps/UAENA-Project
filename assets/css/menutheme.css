@@ -8,7 +8,7 @@ s
 
 #bg-image {
  /* The image used */
- background-image: url("/assets/IU/Menu/menubg.png");
+ background-image: url("../../assets/IU/Menu/menubg.png");
  /* Full height */
  height: 100vh;
 
